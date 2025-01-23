@@ -1,0 +1,77 @@
+/* service section */
+
+.ser-container {
+  margin-top: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 40px;
+  padding: 3%;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+.ser-container .heading {
+  text-align: center;
+  padding-bottom: 15px;
+  color: red;
+  font-size: 40px;
+}
+
+.ser-container .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 20px;
+}
+
+.ser-container .box-container .box {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background: #fff;
+  text-align: center;
+  padding: 30px 20px;
+  border-radius: 20px;
+  transition: transform 0.5s ease, box-shadow 0.5s ease; /* Added transition */
+}
+
+.ser-container .box-container .box .boximg {
+  width: 100px;
+  height: 100px;
+}
+
+.ser-container .box-container .box h3 {
+  color: #444;
+  font-size: 18px;
+}
+
+.ser-container .box-container .box p {
+  color: #777;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.ser-container .box-container .box .btn {
+  margin-top: 10px;
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 5px;
+  padding: 8px 25px;
+  transition: background 0.5s ease, letter-spacing 0.5s ease; /* Added transition */
+}
+
+.ser-container .box-container .box .btn:hover {
+  background: linear-gradient(45deg, #E80500, #777573); /* Smooth gradient */
+}
+
+.ser-container .box-container .box:hover {
+  box-shadow: 0 10px 15px rgba(255, 99, 71, 0.8);
+  transform: scale(1.03);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,102 @@
+/*my code*/
+body{
+  background: none;
+}
+
+.title h1{
+  text-align: center;
+  padding-top: 50px;
+  font-size: 42px;
+  color: #E80500;
+  }
+  
+  .title .line{
+    width: 30%;
+    border-color: #e81010;
+    display: inline-block;
+    border-width: 3px;
+    border-radius: 6px;
+  }
+  
+  .package-box{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    margin: 25px;
+    padding-bottom: 2px;
+    border-radius: 20px;
+  }
+  
+  .services{
+  width:90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 75px auto;
+  text-align: center;
+  }
+  
+  .card{
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin:8px 20px;
+  padding:20px 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  }
+  
+  .card:hover{
+    transition: 0.4s ease;
+    box-shadow: 0 5px 10px #E80500;
+  }
+
+  .card img{
+    border-radius: 20px;
+  }
+  
+  .card h2{
+  font-size: 28px;
+  color:#e81010;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  }
+  
+  .card p{
+  font-size: 17px;
+  margin-bottom: 30px;
+  Line-height: 1.5;
+  color:#7b7b7b;
+  }
+  
+  .button{
+   font-size: 15px;
+   text-decoration: none;
+   color:#fff;
+   background-color:#24262b;
+   padding:8px 12px;
+   border-radius: 5px;
+   Letter-spacing: 1px;
+  }
+  
+  .button:hover{
+  background-color:#E80500;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.4s ease;
+  }
+  
+  @media screen and (max-width: 940px){
+    .services{
+    display: flex;
+    flex-direction: column;
+    }
+  
+    .card{
+    width:85%;
+    display: flex;
+    margin: 20px 0px;
+    }
+  }

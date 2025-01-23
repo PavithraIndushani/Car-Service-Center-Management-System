@@ -1,0 +1,186 @@
+.home{
+    position: relative;
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 8% 0;
+    overflow: hidden;
+}
+.home-content{
+    max-width: 630px;
+}
+
+.home-content h1 {
+    font-size: 50px;
+    color: #1b1111;
+    line-height: 1.2;
+    opacity: 0;
+    animation: slideBottem 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.home-content h3{
+    font-size: 40px;
+    color: #e31717;
+    opacity: 0;
+    margin-left:-19%;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1.3s;
+}
+.home-content p{
+    font-size: 16px;
+    margin: 15px 0 30px;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1.6s;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 28px;
+    background: #e31e17;
+    border: 2px solid #e31717;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    font-size: 14px;
+    color: #eaeaea;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .5s;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+}
+.btn:hover{
+    background: transparent;
+    color: #e31717;
+}
+
+.home-img {
+    position: relative;
+    width: 450px;
+    height: 450px;
+    right: -8%;
+    transform: rotate(45deg);
+}
+.home-img .rhombus{
+    position: absolute;
+    width: 510px;
+    height: 510px;
+    background: #eaeaea;
+    border: 25px solid #e32517;
+    box-shadow: -15px 15px 15px rgba(0, 0, 0, .2);
+    animation: zoomOut 1s ease forwards;
+    animation-delay: 1.6s;
+}
+.home-img .rhombus img{
+    position: absolute;
+    width: 430px;
+    height: auto;
+    left: 50px;
+    top: 50px;
+    left: -2%;
+    transform: rotate(-45deg);
+    opacity: 0;
+    animation: car 1s ease forwards;
+    animation-delay: 2s;
+}
+
+.home .rhombus2 {
+    position: absolute;
+    top: -225px;
+    right: -310px;
+    width: 650px;
+    height: 650px;
+    background: #e32517;
+    transform: rotate(45deg);
+    z-index: -1;
+    opacity: 0;
+    animation: rhombus2 1s ease forwards;
+}
+
+/*Key Animation*/
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideTop {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slidesSci {
+    0% {
+        transform: translateX(100px) rotate(45deg);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px) rotate(45deg);
+        opacity: 1;
+    }
+}
+@keyframes zoomOut {
+    0% {
+        transform: scale(1.1);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes slideBottem {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes car {
+    0% {
+        transform: translate(300px, -300px) scale(0.8) rotate(-45deg); /* Start larger */
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0, 0) scale(1.5) rotate(-45deg); /* End with larger scale */
+        opacity: 1;
+    }
+}
+
+@keyframes rhombus2 {
+    0% {
+        right:-40%;
+        opacity: 0;
+    }
+    100% {
+        right:-25%;
+        opacity: 1;
+    }
+}
